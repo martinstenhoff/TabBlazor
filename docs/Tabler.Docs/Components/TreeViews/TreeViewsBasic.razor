@@ -27,13 +27,16 @@
 
         var drawings = new FileFolder("Drawings");
 
-        var architecture = new FileFolder("Arcitecture");
+
+
+        var architecture = new FileFolder("Architecture");
+
         architecture.SubFolders.Add(new FileFolder("Folder1"));
         architecture.SubFolders.Add(new FileFolder("Folder2"));
         drawings.SubFolders.Add(architecture);
 
         drawings.SubFolders.Add(new FileFolder("HVAC"));
-        drawings.SubFolders.Add(new FileFolder("Floorplans"));
+        drawings.SubFolders.Add(new FileFolder("Floor Plans"));
         folders.Add(drawings);
 
         var documents = new FileFolder("Documents");
